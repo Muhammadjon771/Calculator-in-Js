@@ -7,13 +7,12 @@ img{
 .main-cal {
     display: inline-block;
     width: 50%;
-    height: 25rem;
-    background-color: rgb(83, 221, 255);
+    height: 26rem;
 }
 .calc{
     padding: 1rem;
-    width: 65%;
-    height: 70%;
+    width: 50%;
+    height: 75%;
     border: none;
     border-radius: 1rem;
     background-color: grey;
@@ -39,4 +38,13 @@ img{
 }
 .zero{
     background-color: rgb(255, 147, 23) !important;
+}
+#clear{
+    background-color: black;
+    color: #fff;
+    width: 85%;
+}
+.h1{
+    color: black;
+    text-align: center;
 }
