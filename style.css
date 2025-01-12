@@ -6,8 +6,8 @@ img{
 }
 .main-cal {
     display: inline-block;
-    width: 50%;
-    height: 26rem;
+    max-width: 50%;
+    max-height: 26rem;
 }
 .calc{
     padding: 1rem;
@@ -47,4 +47,50 @@ img{
 .h1{
     color: black;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    .main-cal{
+        height: max-content;
+    }
+    .calc {
+        width: 70%;
+        padding: 0.5rem;
+    }
+
+    .calc-display {
+        font-size: 1rem;
+        height: 2.5rem;
+    }
+
+    .calc-buttons button {
+        height: 2.5rem;
+        font-size: 0.9rem;
+    }
+
+    .zero {
+        grid-column: span 2;
+    }
+
+    #clear {
+        height: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .calc {
+        width: 100%;
+    }
+    .calc-display {
+        font-size: 0.9rem;
+    }
+
+    .calc-buttons button {
+        height: 2rem;
+        font-size: 0.8rem;
+    }
+
+    #clear {
+        font-size: 0.9rem;
+    }
 }
